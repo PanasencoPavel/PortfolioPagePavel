@@ -1,0 +1,138 @@
+/*CSS Variables*/
+:root {
+--primary: #ddd ;
+--dark: #333;
+--light: #fff ;
+--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+
+body {
+	margin: 30px 50px 50px 30px;
+	line-height: 1.4;
+}
+
+.btn {
+	color: var(--dark);
+	text-decoration: none;
+	border: 0;
+}
+
+.fa-instagram: hover {
+background-color: yellow;
+}
+
+img {
+	width: 100%;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+
+}
+
+    /*HOME*/
+.home {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 0.75fr 2.25fr;
+
+}
+
+.header {
+	text-align: center;
+	color: #43464B;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.photo-header {
+	box-shadow: var(--shadow);
+}
+
+/*ABOUT*/
+.about {
+  background:  url(http://www.tokkoro.com/picsup/3002922-apple_black-and-white_camera_coder_coffee_computer_cup_desk_hands_laptop_macbook-pro_man_mug_person_programmer_programming_technology_typing_working_wristwatch_write_writer_wr.jpg);
+  filter: brightness(65%);
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about h3 {
+	font-size: 4rem;
+  	margin-bottom: 0;
+  	color: white;
+}
+
+.about p {
+	  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+}
+
+/*BOXES*/
+
+.boxes {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+
+}
+
+.box {
+	background-color: white;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 1.5rem 2rem;
+	box-shadow: var(--shadow);
+	color: #43464B;
+}
+
+
+.fab {
+	color: #DAA520;
+}
+
+.fab:hover {
+	color: white;
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio img{
+	width: 100%;
+	box-shadow: var(--shadow);
+}
+
+
+
+footer {
+   margin-top: 2rem;
+   background: #43464B;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+}
